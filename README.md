@@ -34,3 +34,9 @@ The project contains:
 #define WIFI_PASS "SuperSecret"
 #define MQTT_HOST "192.168.137.101"
 #define MQTT_PORT 1883
+
+### 2. The .bin file should be kept in she same folder as the python script
+ ```cpp
+p.add_argument("fw", nargs="?", default="firmware.ino.bin",
+               help="firmware image (default: firmware.bin)")
+Change the default firmware.ino.bin with actual name of your .bin file
