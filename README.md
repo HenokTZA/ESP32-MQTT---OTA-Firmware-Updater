@@ -26,7 +26,7 @@ The project contains:
 
 ## 🔧 Quick-start
 
-### 1. Flash the receiver sketch
+### 1. Flash the receiver sketch and python side configuration
 
 ```cpp
 // firmware/ota_receiver.ino – edit these first
@@ -35,8 +35,8 @@ The project contains:
 #define MQTT_HOST "192.168.137.101"
 #define MQTT_PORT 1883
 
-### 2. The .bin file should be kept in she same folder as the python script
- ```cpp
+- The .bin file should be kept in she same folder as the python script
+ 
 p.add_argument("fw", nargs="?", default="firmware.ino.bin",
                help="firmware image (default: firmware.bin)")
 Change the default firmware.ino.bin with actual name of your .bin file
