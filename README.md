@@ -34,3 +34,9 @@ The project contains:
 #define WIFI_PASS "SuperSecret"
 #define MQTT_HOST "192.168.137.101"
 #define MQTT_PORT 1883
+
+Install ESP32 Arduino Core ≥ 3.0.
+
+Set MQTT_MAX_PACKET_SIZE 200 in PubSubClient.h or a global -D build flag.
+
+Compile & upload as usual.
